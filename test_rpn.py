@@ -22,3 +22,8 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate('1 1 + 2 *')
         self.assertEqual(4, result)
 
+    def test_power(self):
+        result = rpn.calculate('2 4 ^')
+        self.assertEqual(16, result)
+
+
