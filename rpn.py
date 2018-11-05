@@ -6,8 +6,11 @@ op = {
         '-': operator.sub,
         '*': operator.mul,
         '/': operator.floordiv,
-        '^': operator.xor,
+        '^': operator.ipow
 }
+
+#def rotate(l, n):
+#    return l[n:] + l[:n]
 
 def calculate(arg):
     # Stack for calculator
@@ -20,11 +23,13 @@ def calculate(arg):
             value = int(token)
             stack.append(value)
         
-        except ValueError:
+        except ValueError:           
+        #    if(token == "rl"):
+         #       stack = rotate(stack, 1)
+         #   else:
             val2 = int(stack.pop())
             val1 = int(stack.pop())
-
-            #look up function in operation table
+                 
             func = op[token]
             result = func(val1, val2)
             stack.append(str(result))

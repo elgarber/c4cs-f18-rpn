@@ -24,6 +24,10 @@ class TestBasics(unittest.TestCase):
 
     def test_power(self):
         result = rpn.calculate('2 4 ^')
-        self.assertEqual(6, result)
+        self.assertEqual(16, result)
+
+    def test_rotate(self):
+        result = rpn.calculate('5 2 rl ^')
+        self.assertEqual(32, result)
 
 
