@@ -6,7 +6,7 @@ op = {
         '-': operator.sub,
         '*': operator.mul,
         '/': operator.floordiv,
-        '^': operator.ipow
+        '^': operator.ipow,
 }
 
 #def rotate(l, n):

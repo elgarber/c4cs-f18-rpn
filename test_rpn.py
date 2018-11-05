@@ -30,4 +30,3 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate('5 2 rl ^')
         self.assertEqual(32, result)
 
-
