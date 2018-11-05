@@ -1,11 +1,5 @@
 language: python
 python:
-<<<<<<< HEAD
         - "3.4"
 script:
         - make test
-=======
-        - "3"
-script:
-        - rpn_test
->>>>>>> 472d763... First attempt at Travis file
