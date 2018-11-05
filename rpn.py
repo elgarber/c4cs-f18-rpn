@@ -10,7 +10,6 @@ op = {
         '&': operator.and_,
         '|': operator.or_,
         'xor' : operator.ixor,
-
 }
 
 def rotate(l, n):
