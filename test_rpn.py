@@ -42,3 +42,7 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate('3 5 xor')
         self.assertEqual(6, result)
 
+    def test_repeat(self):
+        result = rpn.calculate('4 2 6 * !')
+        self.assertEqual(48, result)
+

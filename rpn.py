@@ -33,7 +33,6 @@ def calculate(arg):
                 val2 = int(stack.pop())
                 val1 = int(stack.pop())
                  
-                func = op[token]
                 result = func(val1, val2)
                 stack.append(str(result))
     
