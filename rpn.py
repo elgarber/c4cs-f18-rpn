@@ -7,6 +7,10 @@ op = {
         '*': operator.mul,
         '/': operator.floordiv,
         '^': operator.ipow,
+        '&': operator.and_,
+        '|': operator.or_,
+        'xor' : operator.ixor,
+
 }
 
 def rotate(l, n):
