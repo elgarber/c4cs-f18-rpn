@@ -28,5 +28,17 @@ class TestBasics(unittest.TestCase):
 
     def test_rotate(self):
         result = rpn.calculate('5 2 rl ^')
-        self.assertEqual(32, result)
+        self.assertEqual(32, result)i
+
+    def test_and(self):
+        result = rpn.calculate('1 2 and')
+        self.assertEqual(0, result)
+
+    def test_or(self):
+        result = rpn.calculate('3 5 or')
+        self.assertEqual(7, result)
+
+    def test_xor(self):
+        result = rpn.calculate('3 5 xor')
+        self.assertEqual(6, result)
 
